@@ -23,5 +23,4 @@ Open `index.html` in your browser or host via GitHub Pages/Netlify.
 - CSS3  
 - Vanilla JS *(coming soon for backend interaction)*
 
-## Screenshot
-*(Include screenshots here once hosted or recorded)*
+
