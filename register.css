@@ -1,0 +1,100 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(#17cb49 , #324353); 
+    color: antiquewhite;
+}
+
+
+.container {
+    background: #1d2c3c;
+    padding: 45px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgb(29, 44, 60, 1.5);
+    max-width: 450px; 
+    margin: 0 auto; 
+    margin-top: 50px;
+    animation: fadeIn 0.6s ease-in;
+}
+ 
+
+h1 {
+    color: #17cb49; 
+    text-align: center; 
+    margin-bottom: 30px;
+    
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px; 
+}
+
+input, select {
+    width: 95%; 
+    padding: 15px; 
+    border: 1px solid #324353; 
+    border-radius: 10px; 
+    background: rgba(255, 255, 255, 0.2); 
+    color: antiquewhite; 
+    outline: none; 
+    transition: background 0.3s; 
+}
+select {
+    width: 100%;
+}
+#workshop {
+    background-color: rgb(50, 67, 83);
+    color: #17cb49;
+}
+
+
+label {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    color: #ddd; 
+    transition: 0.3s ease; 
+    pointer-events: none; 
+}
+
+/* Focus Effects */
+input:focus, select:focus {
+    background: rgba(255, 255, 255, 0.3); 
+}
+
+input:focus + label, select:focus + label,
+input:not(:placeholder-shown) + label, select:valid + label {
+    top: -10px; /* Move label up */
+    left: 10px; /* Keep label in place */
+    font-size: 0.9em; 
+    color: #17cb49; /* Change label color */
+}
+
+
+button {
+    width: 100%;
+    padding: 15px; 
+    border: none; 
+    border-radius: 10px; 
+    background-color: rgb(6, 160, 255); 
+    color: antiquewhite; 
+    font-size: 1.1em; 
+    font-weight: bolder;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

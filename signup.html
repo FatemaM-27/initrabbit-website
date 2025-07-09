@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InitRabbit-Sign-up</title>
+    <style>
+        * {
+            margin:0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient( #3c6c01,#bab697);
+            height: 95vh;
+        }
+
+        .form-container {
+            display: block;
+            margin: 4rem auto;
+            background: #008080;
+            padding: 20px;
+            width: 550px;
+            border: 3px solid #bab697;
+            box-shadow: 0 0 4px 2px #bab697;
+            border-radius: 20px;
+        }
+
+        h2{
+            text-align: center;
+            padding: 10px;
+            color: rgb(48, 48, 48);
+            font-size: 2rem;
+        }
+        span {
+            background: linear-gradient(to right, #3c6c01, #053636);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .form-container label{
+            display: block;
+            margin: 10px 0px;
+            font-weight: bolder;
+            font-size: 1.3rem;
+            color: rgb(48, 48, 48);
+        }
+
+        input{
+            width: 100%;
+            height: 2.7rem;
+            padding: 0.5rem;
+            border: 1px solid #bab697;
+            border-radius: 10px;
+        }
+
+        form button {
+            display: block;
+            width: 30%;
+            height: 2.5rem;
+            background: radial-gradient(lightblue, white);
+            text-align: center;
+            margin: 25px 0px;
+            border: 2px solid #bab697;
+            border-radius: 10px;
+            justify-self: center;
+            box-shadow: 3px 3px 8px inset;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        p a {
+            text-decoration: none;
+            color: #81d817;
+        }
+        button:hover {
+            background: linear-gradient(#3c6c01, #bab697);
+            transform: scaleY(1.1);
+        }
+
+        input:hover{
+            border: 3px solid #3c6c01;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="submit" class="login-form">
+            <h2>Sign up to <span>InitRabbit</span></h2>
+            <label for="email">Email Id:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email Id">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <label for="confirm-pass">Confirm Your Password:</label>
+            <input type="password" name="confirm-pass" id="confirm-pass" placeholder="Confirmed password">
+            <button>Sign-up</button>
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+        </form>
+    </div>
+    
+</body>
+</html>

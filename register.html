@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Workshop Registration</title>
+    <link rel="stylesheet" href="./register.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <h1>Career Workshop Registration</h1>
+        <form action="submit_registration.php" method="POST">
+            <div class="input-group">
+                <input type="text" id="name" name="name" required>
+                <label for="name">Full Name</label>
+            </div>
+            
+            <div class="input-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            
+            <div class="input-group">
+                <input type="tel" id="phone" name="phone" required>
+                <label for="phone">Phone Number</label>
+            </div>
+            
+            <div class="input-group">
+                <select id="workshop" name="workshop" required>
+                    <option value="" disabled selected>--Select a Workshop--</option>
+                    <option value="data_science">Data Science</option>
+                    <option value="ai_ml">AI & ML</option>
+                    <option value="cybersecurity">Cybersecurity</option>
+                    <option value="web_development">Web Development</option>
+                </select>
+            </div>
+            
+            <button type="submit">Register Now</button>
+        </form>
+    </div>
+</body>
+</html>
